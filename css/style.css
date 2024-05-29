@@ -1,0 +1,114 @@
+/* Candice Keet */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	background-color: #4766B8;
+    margin: 0;
+	padding: 0;
+}
+
+#page {
+    width: 710px;
+	background-color: white;
+	margin: 10px auto;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+#banner {
+    margin-bottom: .1em;
+	height: 85px;
+    width: 300px;
+    margin-left: 150px;
+}
+
+#navigation {
+    margin-top: 1em;
+	height: 56px;
+    width: 560px;
+	background-color: white;
+    margin-left: 130px;
+}
+
+#sidebar {
+    width: 150px;
+	height: 350px;
+	background-color: white;
+	margin-bottom: .7em;
+    margin-top: -130px;
+	float: left;
+} 
+
+#main {
+    margin-left: 150px;
+}
+
+.copyright {
+    font-size: 90%;
+    text-align: right; 
+	margin: 0;
+    /* margin: 50px; */
+    margin-top: .5ems;
+    border-top: 2px solid gray;
+    padding-top: .7ems;
+}
+
+	
+/* the styles for the table*/
+
+.caption {
+    display: flex;
+    justify-content: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-size: 150%;
+	color: #4766B8;
+}
+
+.btn {
+    border-color: gray;
+    color: black;
+    height: 25px;
+    width: 70px;
+}
+.btn:hover {
+    border-color: gray;
+    
+}
+
+.btn2 {
+    display: flex;
+    justify-content: center;
+    border-color: gray ;
+    border-radius: 4px;
+    width: 100px;
+    margin-left: 18px;
+    
+}
+.btn2:hover{
+    border-color: #47a7b8;
+}
+
+td, th {
+	border: 1px solid black;
+	padding: .2em .7em;
+	font-size: 95%;
+}	
+
+.th1{
+    font-weight: bold;
+
+}
+.alignRight {
+	text-align: right;
+}
+
+input.form-control {
+    width: 10px;
+    height: 30px;
+}
+
+/* #footer {
+} */
