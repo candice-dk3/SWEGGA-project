@@ -8,7 +8,7 @@ body {
 }
 
 #page {
-    width: 710px;
+    width: 760px;
 	background-color: white;
 	margin: 10px auto;
 	border: 2px solid black;
@@ -47,10 +47,6 @@ body {
     font-size: 90%;
     text-align: right; 
 	margin: 0;
-    /* margin: 50px; */
-    margin-top: .5ems;
-    border-top: 2px solid gray;
-    padding-top: .7ems;
 }
 
 	
@@ -74,8 +70,7 @@ body {
     width: 70px;
 }
 .btn:hover {
-    border-color: gray;
-    
+    border-color: gray; 
 }
 
 .btn2 {
@@ -104,11 +99,14 @@ td, th {
 .alignRight {
 	text-align: right;
 }
-
-input.form-control {
-    width: 10px;
-    height: 30px;
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
-/* #footer {
-} */
+#footer {
+    margin-top: 0.5em;
+    border-top: 2px solid gray;
+    padding-top: 0.7em;
+    clear: left;
+}
