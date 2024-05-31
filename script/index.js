@@ -1,34 +1,36 @@
-// calculate = document.getElementById('calculate')
-// calculate.addEventListener('click', (event) => {
-//     event.preventDefault()
-//     calculate()
-// })
+let priceF = document.getElementById('priceF')
+let priceM = document.getElementById('priceM')
+let quantityF = document.getElementById('quantityF')
+let quantityM = document.getElementById('quantityM')
+let resultF = document.getElementById('resultF')
+let resultM = document.getElementById('resultM')
+let result = document.getElementById('resultTc')
+let calc = document.getElementById('rbtn')
 
+let resultf1
+let resultm1
 
-function calculate() {
-    const prices = document.querySelectorAll('.price');
-    const quantities = document.querySelectorAll('.quantity input');
-    const totals = document.querySelectorAll('[total]');
-    let femaleTotal = 0;
-    let maleTotal = 0;
-    for (let i = 0; i < prices.length; i++) {
-        const price = parseFloat(prices[i].textContent);
-        const quantity = parseInt(quantities[i].value);
-        const total = price * quantity;
-        totals[i].textContent = total.toFixed(2);
-        if (i === 0) {
-            femaleTotal += total;
-        } else if (i === 1) {
-            maleTotal += total;
-        }
-    }
-    // Calculate the overall total by adding female and male totals
-    const overallTotal = femaleTotal + maleTotal;
-    // Display the individual totals and overall total
-    const femaleTotalElement = document.querySelector('[female-total]');
-    femaleTotalElement.textContent = ` R${femaleTotal.toFixed(2)}`;
-    const maleTotalElement = document.querySelector('[male-total]');
-    maleTotalElement.textContent = ` R${maleTotal.toFixed(2)}`;
-    const overallTotalElement = document.querySelector('[overall-total]');
-    overallTotalElement.textContent = `R${overallTotal.toFixed(2)}`;
+function calculateandDisplay(){
+     resultf1 =parseFloat(eval(`${priceF.innerText}*${quantityF.value}`)).toFixed(2);
+    resultF.innerText = resultf1
+    resultm1 =parseFloat(eval(`${priceM.innerText}*${quantityM.value}`)).toFixed(2);
+    
+    resultM.innerText = resultm1
 }
+
+priceF.addEventListener('input', calculateandDisplay)
+quantityF.addEventListener('input', calculateandDisplay)
+
+
+
+priceM.addEventListener('input', calculateandDisplay)
+quantityM.addEventListener('input', calculateandDisplay)
+
+
+calc.addEventListener('click', (event)=>{
+    event.preventDefault()
+    var resultc =eval(`${resultf1}+${resultm1}`)
+
+    result.innerText = resultc
+    console.log(resultf1, resultm1);
+})
